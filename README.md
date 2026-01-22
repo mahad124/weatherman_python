@@ -21,7 +21,7 @@ WeatherMan provides four different analysis modes:
 ### Command Syntax
 
 ```bash
-python3 main.py <path_to_weather_data> <mode> <date> <task_name>
+python3 main.py <path_to_weather_data> <mode> <date> 
 ```
 
 ### Parameters
@@ -35,7 +35,7 @@ python3 main.py <path_to_weather_data> <mode> <date> <task_name>
 - `<date>` - Date specification:
   - For yearly reports: `YYYY` (e.g., `2011`)
   - For monthly reports: `YYYY/MM` (e.g., `2011/3` for March 2011)
-- `<task_name>` - Optional task identifier (e.g., `Task1`, `Task2`, etc.)
+
 
 ## Examples
 
@@ -43,7 +43,7 @@ python3 main.py <path_to_weather_data> <mode> <date> <task_name>
 Find the highest temperature, lowest temperature, and maximum humidity for the year 2011:
 
 ```bash
-python3 main.py ./Dubai_weather -e 2011 Task1
+python3 main.py ./Dubai_weather -e 2011 
 ```
 
 **Output:**
@@ -57,7 +57,7 @@ Humidity: 95 % on Aug 20
 Calculate average temperatures and humidity for March 2011:
 
 ```bash
-python3 main.py ./Dubai_weather -a 2011/3 Task2
+python3 main.py ./Dubai_weather -a 2011/3
 ```
 
 **Output:**
@@ -71,7 +71,7 @@ Average Humidity: 65 %
 Display daily maximum and minimum temperatures separately for March 2011:
 
 ```bash
-python3 main.py ./Dubai_weather -c 2011/3 Task3
+python3 main.py ./Dubai_weather -c 2011/3 
 ```
 
 **Output:**
@@ -88,7 +88,7 @@ Mar 2011
 Display daily temperature ranges (min-max) as combined bar charts for March 2011:
 
 ```bash
-python3 main.py ./Dubai_weather -d 2011/3 Task4
+python3 main.py ./Dubai_weather -d 2011/3 
 ```
 
 **Output:**
